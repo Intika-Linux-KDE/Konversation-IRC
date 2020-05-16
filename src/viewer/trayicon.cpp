@@ -40,11 +40,13 @@ namespace Konversation
             return;
         }
 
+        setIconByName("konv_message");
         setStatus(NeedsAttention);
     }
 
     void TrayIcon::endNotification()
     {
+        setIconByName("konversation");
         setStatus(Passive);
     }
 
